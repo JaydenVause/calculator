@@ -101,6 +101,7 @@ background: linear-gradient(62deg, rgba(207,204,204,1) 0%, rgba(133,130,130,1) 3
 .calc-key:hover{
     background-color: grey;
     cursor: pointer;
+    transform: scale(1.08);
 }
 
 /* Chalkboard instructionaire*/
@@ -127,7 +128,7 @@ background: linear-gradient(62deg, rgba(207,204,204,1) 0%, rgba(133,130,130,1) 3
     font-family: 'Fredericka the Great', cursive;
 }
 
-#plusBtn{
+#addBtn{
     grid-row-start: 4;
     grid-row-end: 6;
     grid-column-start: 4;
