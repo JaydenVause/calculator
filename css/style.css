@@ -1,5 +1,5 @@
 #main{
-    background-image: url(./imgs/image.png);
+    background-image: url('imgs/image.png');
     min-height: 800px;
 }
 
