@@ -63,9 +63,15 @@ background: linear-gradient(62deg, rgba(207,204,204,1) 0%, rgba(133,130,130,1) 3
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 2.5em;
+    font-size: 1em;
     font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-flow: column;
 
+}
+
+#outputIn{
+    font-size: 1.9em;
 }
 
 #calc-keyboard{
@@ -119,4 +125,11 @@ background: linear-gradient(62deg, rgba(207,204,204,1) 0%, rgba(133,130,130,1) 3
     font-size: 1.5em;
     color: white;
     font-family: 'Fredericka the Great', cursive;
+}
+
+#plusBtn{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
