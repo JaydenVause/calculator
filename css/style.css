@@ -1,9 +1,5 @@
 #main{
-<<<<<<< HEAD
     background-image: url("/imgs/image.png");
-=======
-    background-image: url("/imgs/image.png")
->>>>>>> 69df21cf259c334ffacecdf64fbcaf4a6ab785cc
     min-height: 800px;
 }
 
