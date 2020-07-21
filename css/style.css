@@ -1,5 +1,6 @@
 #main{
     background-image: url("../imgs/image.png");
+    background-size: contain;
     min-height: 100vh;
     display: flex;
     justify-content: center;
