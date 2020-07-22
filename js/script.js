@@ -9,7 +9,7 @@ const multiplyBtn = document.querySelector('#mltpBtn');
 const divideBtn = document.querySelector('#divBtn');
 
 //storing input strings
-let a = "";
+let a ;
 let b = "";
 let input = "";
 
@@ -19,31 +19,31 @@ let fnctn = "";
 
 add = (a, b) => {
     
-    userInput.textContent = a+b;
-    a = "";
-    b = "";
+    
+    b = a + b;
+    userInput.textContent = b;
+    a = 0;
     return 
 }
 subtract = (a, b) => {
     
-    userInput.textContent = a-b;
-    a = "";
-    b = "";
+    b = a - b;
+    userInput.textContent = b;
+    a = 0;
     return a - b
 }
 multiply = (a, b) => {
     
-    userInput.textContent = a*b;
-    a = "";
-    b = "";
-    return a * b
+    b = a * b;
+    userInput.textContent = b;
+    a = 0;
+    return 
 }
 divide = (a, b) => {
-    
-    userInput.textContent = a/b;
-    a = "";
-    b = "";
-    return a / b
+    b = a / b;
+    userInput.textContent = b;
+    a = 0;
+    return
 }
 
 
@@ -150,4 +150,12 @@ additionBtn.addEventListener('click', () => {
     userCommand();
     
     
+});
+
+window.addEventListener('keydown',(e)=>{
+//  console.log(e.keyCode);
+ let key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+ if(key){
+    logging(key.textContent);
+ }
 });
