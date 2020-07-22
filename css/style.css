@@ -3,6 +3,9 @@
     background-size: contain;
     min-height: 100vh;
     display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -17,8 +20,7 @@
 
 #calc-body{
     
-    width: 400px;
-    height: 600px;
+   
     background-color: #616161;
     border-color: black;
     border-style: solid;
@@ -27,7 +29,7 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin: 10px;
+    margin: 20px;
   
 }
 
@@ -37,8 +39,8 @@
     flex-flow: column;
 }
 #calc-battery{
-    width: 300px;
-    height: 15px;
+    width: 60%;
+    height: 20px;
     border-style: solid;
     border-color: black;
     background-color: #c4612f;
@@ -48,7 +50,7 @@
 
 }
 #calc-output{
-    width: 300px;
+    width: 80%;
     height: 60px;
     padding: 10px;
     border-style: solid;
@@ -76,11 +78,12 @@ background: linear-gradient(62deg, rgba(207,204,204,1) 0%, rgba(133,130,130,1) 3
 }
 
 #calc-keyboard{
+    height: 300px;
     padding: 10px;
     grid-gap: 10px 10px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 70px);
+    grid-template-columns: repeat(5, 15fr);
+    grid-template-rows: repeat(5, 15fr);
 }
 
 .calc-key{
@@ -111,10 +114,10 @@ background: linear-gradient(62deg, rgba(207,204,204,1) 0%, rgba(133,130,130,1) 3
     border-style: solid;
     border-color: #6e2903;
     border-width: 20px;
-    width: 500px;
+    max-width: 500px;
     height: 400px;
     margin: 10px;
-    margin-right: -400px;
+    
     box-shadow: 10px 20px;
     display: flex;
     flex-flow: column;
